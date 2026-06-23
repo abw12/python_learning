@@ -82,6 +82,9 @@
 # calc_printEl(num_list,0)
 
 
+from ast import Not
+
+
 contact_details={
     "name": "Abhishek Wasave",
     "phnNumber":  8459319614,
@@ -117,3 +120,27 @@ def highestAltitude(gain:list[int]) -> int:
         if highest < sum:
             highest=sum
     return highest
+
+# In Python, variables do not store values directly.
+# Variables store references to objects.
+a = [1,2,3,4]
+b=a # b point to same reference as 'a' (same list object) 
+print(a)
+print(b)
+b.append(10)
+print(a)
+print(b)
+
+# Reassingment concept
+
+x=10
+x=20 
+# Here, x first points to 10, then points to 20.
+# You did not modify 10.
+# You changed what x points to.
+
+## Mutation
+x=[10,20,30]
+x.append(40)
+# Here, the same list object is modified.
+# The variable still points to the same object, but the object’s internal value changed.
