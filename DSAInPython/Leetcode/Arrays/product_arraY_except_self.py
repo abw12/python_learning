@@ -1,3 +1,5 @@
+from typing import List
+
 class productExceptSelfSolution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         result=[]
@@ -17,6 +19,7 @@ class productExceptSelfSolution:
         #     result[i]*=right
         # return result
 
+        ## Faster approach in python to beat 90+% using the pythonic way ofw riting code (similar approach logically as above)
         prefix =1
         n = len(nums)
         result = [1] * n # preload the array size 
