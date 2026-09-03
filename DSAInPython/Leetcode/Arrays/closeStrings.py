@@ -17,4 +17,4 @@ class CloseStrings:
             if ((freq1[i] == 0) != (freq2[i] == 0)):
                 return False
         # 2. Frequencies must match regardless of which character has which count
-        return sorted(freq1) != sorted(freq2)
+        return sorted(freq1) == sorted(freq2)
